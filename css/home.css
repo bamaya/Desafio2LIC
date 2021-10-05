@@ -1,19 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(62, 189, 72, 0.589);
+}
+
 .back-button {
-    background-color: #ff514b;
-    color: #ccc;
+    background-color: rgba(94, 141, 245, 0.75);
+    color: white;
     display: block;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: Bold;
     height: 50px;
-    margin: 32px auto;
+    margin: 60px auto;
     padding-top: 20px;
     text-align: center;
     text-decoration: none;
-    width: 24%;
+    width: 40%;
 }
 
 .back-button:hover {
-    background-color: rgba(225,135,130,0.75);
-    color: #fff;
+    background-color: rgba(159, 188, 250, 0.75);
+    color: white;
     text-decoration: none;
+}
+
+h1{
+    background: rgba(230, 230, 230, 0.8);
+    color: #FFFFFF;
+    font: normal 3.2em Arial,Helvetica,"Liberation Sans";
+    padding: 6px 0;
+    text-align: center;
+    text-shadow: 0 1px 0 #ccc,
+                 0 2px 0 #c9c9c9,
+                 0 3px 0 #bbb,
+                 0 4px 0 #b9b9b9,
+                 0 5px 0 #aaa,
+                 0 6px 1px rgba(0,0,0,.1),
+                 0 0 5px rgba(0,0,0,.1),
+                 0 1px 3px rgba(0,0,0,.3),
+                 0 3px 5px rgba(0,0,0,.2),
+                 0 5px 10px rgba(0,0,0,.25),
+                 0 10px 10px rgba(0,0,0,.2),
+                 0 20px 20px rgba(0,0,0,.15);
+}
+
+footer{
+    text-align: center;
+ 	margin-top : 9%;
+ 	font-size: 18px;
+ 	line-height: 6;
+ 	clear: both;
+ 	color: white;
+ 	width: 100%;
+    background-color: royalblue;
 }
