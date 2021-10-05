@@ -10,7 +10,7 @@ function printvalue(val){
 
     if(out.innerHTML == "0")
     {
-        if(val !="C" && val !="CE" && val !="=" && val !="x2" && val != "1/x" && val != "√" && val != "%"){
+        if(val !="C" && val !="CE" && val !="=" && val !="x²" && val != "1/x" && val != "√" && val != "%"){
             out.innerHTML ="";
             out.innerHTML += val;
         }
@@ -22,7 +22,7 @@ function printvalue(val){
             }
         }
 
-        if(val != "C" && val != "CE" && val != "=" && val !="x2" && val != "1/x" && val != "√" && val != "%"){
+        if(val != "C" && val != "CE" && val != "=" && val !="x²" && val != "1/x" && val != "√" && val != "%"){
             out.innerHTML += val;
         }
     
@@ -30,7 +30,7 @@ function printvalue(val){
             out.innerHTML = "0";
         }
 
-        if (val == "x2"){
+        if (val == "x²"){
             let resul = out.innerHTML;
             out.innerHTML = Math.pow(resul,2)
         }
