@@ -10,24 +10,44 @@ function printvalue(val){
 
     if(out.innerHTML == "0")
     {
-        if(val !="C" && val !="DEL"){
+        if(val !="C" && val !="CE" && val !="=" && val !="x2" && val != "1/x" && val != "√" && val != "%"){
             out.innerHTML ="";
             out.innerHTML += val;
         }
     }else{
-        if(val == "DEL"){
+        if(val == "CE"){
             out.innerHTML = current.slice(0,-1);
             if(out.innerHTML.length <=1){
                 out.innerHTML ="0";
             }
         }
 
-        if(val != "C" && val != "DEL" && val != "="){
+        if(val != "C" && val != "CE" && val != "=" && val !="x2" && val != "1/x" && val != "√" && val != "%"){
             out.innerHTML += val;
         }
-
+    
         if(val == "C"){
             out.innerHTML = "0";
+        }
+
+        if (val == "x2"){
+            let resul = out.innerHTML;
+            out.innerHTML = Math.pow(resul,2)
+        }
+
+        if (val == "√"){
+            let resul = out.innerHTML;
+            out.innerHTML = Math.sqrt(resul)
+        }
+
+        if (val =="1/x"){
+            let resul = out.innerHTML;
+            out.innerHTML = Math.pow(resul,-1)
+        }
+
+        if (val == "%"){
+            let resul = out.innerHTML;
+            out.innerHTML = resul/100
         }
 
         if(val == "="){
