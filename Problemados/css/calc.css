@@ -22,7 +22,7 @@ body {
 h1{
     background: rgba(230, 230, 230, 0.8);
     color: #FFFFFF;
-    font: normal 4.2em Arial,Helvetica,"Liberation Sans";
+    font: normal 3.6em Arial,Helvetica,"Liberation Sans";
     padding: 6px 0;
     text-align: center;
     text-shadow: 0 1px 0 #ccc,
@@ -119,11 +119,11 @@ h2{
     background-color: #ff514b;
     color: #ccc;
     display: block;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: Bold;
-    height: 50px;
+    height: 30px;
     margin: 32px auto;
-    padding-top: 20px;
+    padding-top: 10px;
     text-align: center;
     text-decoration: none;
     width: 24%;
