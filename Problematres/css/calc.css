@@ -7,6 +7,27 @@
     font-family: 'Nunito',sans-serif;
 }
 
+.back-button {
+    background-color: #f57f17;
+    color: white;
+    display: block;
+    font-size: 20px;
+    font-weight: Bold;
+    height: 30px;
+    margin-left: 14%;
+    margin-top: 10%;
+    padding-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 10%;
+}
+
+.back-button:hover {
+    background-color: rgba(248, 150, 58, 0.801);
+    color: #fff;
+    text-decoration: none;
+}
+
 .calc{
     position: absolute;
     left: 50%;
