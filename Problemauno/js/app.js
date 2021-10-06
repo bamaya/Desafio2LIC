@@ -12,11 +12,11 @@ document.addEventListener('DOMContentLoaded', Init)
 function Init()
 {
     var continuar = true;
-    while(continuar)
+    while(continuar == true)
     {
         //obtener valores
         nombreProducto = prompt('Ingrese el nombre del producto');        
-        if(nombreProducto != "")
+        if(nombreProducto != "" && nombreProducto != null)
         {
             precio = prompt('Ingrese el precio del producto ($)');
             if( !isNaN( Number(precio) ) && Number(precio) > 0)
