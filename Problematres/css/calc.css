@@ -50,6 +50,7 @@
     display: grid;
     grid-template-columns: auto auto ;
 }
+
 .botons button{
     padding: 10px;
     border-radius: 4px;
@@ -59,6 +60,7 @@
     transition: .2s all linear;
     background-color: rgba(255, 0, 0, 0.76);
 }
+
 .botons button:hover{
     background-color: #e0e0e0;
 }

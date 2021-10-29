@@ -1,5 +1,4 @@
-function init()
-{
+function init() {
     //Elemento div donde se mostrará el menu de las operaciones
     const operaciones = document.getElementById('operaciones');
 
@@ -28,18 +27,16 @@ function init()
     var opciones = document.getElementsByTagName('a');
 
     //Recorrer todos los elementos de enlace y asignar el manejador del evento click
-    for(var i=0; i<opciones.length; i++)
-    {
-        switch(i)
-        {
+    for (var i = 0; i < opciones.length; i++) {
+        switch (i) {
             case 0:
-                
+
                 break;
             case 1:
-                
+
                 break;
             case 2:
-               
+
                 break;
         }
     }

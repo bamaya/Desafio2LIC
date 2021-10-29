@@ -1,51 +1,42 @@
 //Declaracion de variables
 const DIVtable = document.querySelector('#table');
-var total = 0, nombreProducto = "", precio = 0;
+var total = 0,
+    nombreProducto = "",
+    precio = 0;
 var productos = [];
 
 //Eventos
 document.addEventListener('DOMContentLoaded', Init)
 
-//Funciones
-
-//Funcion al iniciar
-function Init()
-{
+//Funciones Funcion al iniciar
+function Init() {
     var continuar = true;
-    while(continuar == true)
-    {
+    while (continuar == true) {
         //obtener valores
-        nombreProducto = prompt('Ingrese el nombre del producto');        
-        if(nombreProducto != "" && nombreProducto != null)
-        {
+        nombreProducto = prompt('Ingrese el nombre del producto');
+        if (nombreProducto != "" && nombreProducto != null) {
             precio = prompt('Ingrese el precio del producto ($)');
-            if( !isNaN( Number(precio) ) && Number(precio) > 0)
-            {
+            if (!isNaN(Number(precio)) && Number(precio) > 0) {
                 let infoProducto = [nombreProducto, precio];
-        
+
                 //se agrega el producto al arreglo de productos
                 productos.push(infoProducto);
                 total = total + Number(precio);
-        
+
                 continuar = confirm('¿Quiere ingresar otro producto?');
-            }
-            else
-            {
+            } else {
                 alert('Ingrese valores validos de dinero');
             }
-        }
-        else
-        {
+        } else {
             alert('Ingresar el nombre del producto');
-        }        
-    }  
+        }
+    }
 
-    createTable(productos);    
+    createTable(productos);
 }
 
 //Funcion para crear la tabla con los productos
-function createTable(Aproductos)
-{
+function createTable(Aproductos) {
     var html = "";
 
     html += `
@@ -58,7 +49,7 @@ function createTable(Aproductos)
             </thead>
             <tbody>
     `;
-    Aproductos.forEach( (producto) => {
+    Aproductos.forEach((producto) => {
         html += `
             <tr>
                 <td scope="row">${producto[0]}</td>
@@ -70,7 +61,9 @@ function createTable(Aproductos)
     html += `
                 <tr>
                     <th scope="row">Total</th>
-                    <td>$${(total*100)/100}</td>
+                    <td>$${ (
+        total * 100
+    ) / 100}</td>
                 </tr>
             </tbody>
         </table>
